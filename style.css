@@ -1,0 +1,776 @@
+@font-face{
+    font-family: Roboto;
+    src: url(fonts/kaushanscript-regular.ttf);
+}
+@font-face{
+    font-family: truenobd;
+    src: url(fonts/truenobd.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --fon1:linear-gradient(#f38181ea,#fce38aea);
+}
+
+header{
+    width: 100%;
+    color: white;
+    background-image: var(--fon1),url(img/kalxat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+
+    
+}
+nav{
+display: flex;
+justify-content: space-between;
+position: relative;
+}
+nav .logo{
+    padding: 20px 0px;
+    font-family: kaushan;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 25px 0px;
+    margin-left: 30px;
+    
+}
+
+
+.menu li a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+   
+}
+.menu li a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(252, 227, 138);
+    position: absolute;
+    bottom: -8px;
+}
+.menu li a:hover::before{
+    width: 100%;
+    transition: 0.4s;
+}
+.menu li a:hover{
+    color: rgb(252, 227, 138);
+}
+
+.ct{
+margin-top: 80px;
+font-size: 50px;
+font-family: Roboto;
+}
+.wel{
+    margin-top: 20px;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 95px;
+    font-family: truenobd;
+    
+}
+
+.btn{
+    background: none;
+    color: white;
+    border: 1px solid #fff;
+    font-size: 12px;
+    padding: 7px 20px;
+    outline: none;
+    margin-top: 20px;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+background-color: rgb(149,225,211);
+transform: scale(1.2 , 1.2);
+border: none;
+}
+.box-tashqi{
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;  
+}
+.box{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+}
+span::before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.box-ichki{
+    display: inline-block;
+    width: 212.5px;
+}
+.ml{
+margin-left: 10px;
+}
+.intro{
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+.bold{
+    font-size: 16px;
+}
+
+/* page2 */
+
+.page2{
+    width: 100%;
+    
+}
+
+.doimiy-blok{
+    display: block;
+    position: relative;
+  text-align: center;
+}
+.doimiy-p{
+    margin-top: 50px;
+    font-size: 21px;
+    font-family: roboto;
+}
+.doimiy-h{
+    text-transform: uppercase;
+    font-family: truenobd;
+    margin-top: 5px;
+padding-bottom: 30px;
+}
+
+ .doimiy-blok .line{
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    position: absolute; 
+    left: 430px;
+    bottom: 0; 
+    
+}
+.page2-box{
+    
+    display: inline-block;
+    width: 279px;
+    height: 200px;
+    margin: 70px 0px;
+    position: relative;
+}
+.mg-l{
+margin-left: 25px;
+}
+
+.page2-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rasm{
+    display: inline-block;
+}
+.page2-box:hover {
+    box-shadow: 7px 7px rgb(149,225,211) ;
+    transform: translate(-10px,-10px);
+}
+.page2-box:hover .middle{
+visibility: visible;
+opacity: 1;
+}
+.middle{
+    background-image: linear-gradient(#f38181ea,#fce38aea);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: #fff;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.middle i{
+    margin-top: 70px;
+
+}
+.middle p{
+    font-family: truenobd;
+    font-size: 18px;
+}
+.users-icon{
+    margin-top: 70px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: truenobd;
+}
+.bluefon{
+    width: 100%;
+    background-color: rgb(149,225,211) ;
+}
+.bluebox{
+    width: 185px;
+    height: auto;
+    text-align: center;
+  border-left: 1px solid rgb(226, 225, 225);
+  padding: 50px 10px;
+    display: inline-block;
+    color: white;
+}
+.bluebox:hover{
+    background-color: rgb(80, 80, 133);
+}
+.border-right{
+    border-right: 1px solid rgb(226, 225, 225);
+}
+.bluebox h1{
+    font-size: 45px;
+    font-family: truenobd;
+  
+}
+.bluebox p{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: kaushan;
+}
+
+/* page3 */
+
+.page3-box{
+    width: 296px;
+    height: 150px;
+    padding-top: 30px;
+display: inline-flex;
+}
+.page3-tashqi{
+    margin: 30px 0;
+}
+
+.page3-icon{
+    width: 15%;
+    margin-top: 10px;
+}
+.page3-icon img{
+    width: 100%;
+}
+.page3-matn{
+    width: 82%;
+    padding-left: 20px;
+
+}
+.page3-matn h3{
+    font-family: truenobd;
+    text-transform: uppercase;
+}
+.page3-matn p{
+    font-family: roboto;
+    color: rgb(102, 100, 100);
+    font-size: 12px;
+    
+}
+
+/* page4 */
+
+.page4{
+    width: 100%;
+    background-image: url(img/kolmak.png) ;
+   background-color: white;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+.bg-opacity {
+    width:100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.ayfon{
+    position: absolute;
+    right: 50px;
+    bottom: -90px; 
+}
+.k-ayfon{
+    position: relative;
+}
+
+
+/* page5 */
+
+.page5-box{
+    width: 440px;
+    height: 300px;
+    display: inline-block;
+    margin: 70px 14px;
+}
+.page5-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.smallpage{
+    width: 100%;
+    background-color: #F8F8F8;
+  
+}
+.small-box{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 60px 0;
+}
+.message{
+   margin-left: 80px;
+}
+
+.small-matn{
+    padding-right: 90px;
+    padding-left: 60px;
+    position: relative;
+}
+.chiziq{
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    display: inline-block;
+}
+.jon-doe{
+    position: absolute;
+    bottom: 0;
+    left: 130px;
+}
+.small-matn p{
+    line-height: 30px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(134, 132, 132);
+}
+.ong::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid ;
+    border-right: 2px solid;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-color: rgb(134, 132, 132);
+    transform: rotate(-45deg);
+}
+.chap::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid ;
+    border-right: 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-color: rgb(134, 132, 132);
+    transform: rotate(135deg);
+}
+
+/* page6 */
+.page6{
+    width: 100%;
+}
+.page6-tashqi{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.page6-box{
+    width: 279px;
+    height: 340px;
+    position: relative;
+    margin: 70px 0;
+}
+.page6-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.page6-box:hover {
+    box-shadow: 7px 7px rgb(149,225,211) ;
+    transform: translate(-10px,-10px);
+}
+.page6-box:hover .middle2{
+visibility: visible;
+opacity: 1;
+} 
+ .middle2{
+    background-image: linear-gradient(#f38181ea,#fce38aea);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: #fff;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+     display: flex;
+
+}
+
+.middle2 i{
+    background-color: #FCE389;
+    color: rgb(243, 129, 129);
+}
+.middle2 i:hover{
+    background-color: rgb(243, 129, 129);
+    color: #fff;
+}
+
+/* logos */
+.logos-img{
+    width: 100%;
+    background-color: #F8F8F8;
+    
+}
+.logos-box img{
+    width: 100%;
+    padding: 50px 0;
+}
+
+/* page7 */
+.page7{
+    width: 100%;
+}
+.page7-tashqi{
+    width: 100%;
+    margin-top: 80px ;
+}
+.page7-box{
+    width: 25%;
+    height: 300px;
+    display: inline-block;
+    margin-left: -4px;
+    margin-top: -4px;
+    position: relative;
+}
+.page7-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+.middle3{
+    background-image: linear-gradient(#f38181ea,#fce38aea);
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: white;
+   
+}
+.page7-box:hover .middle3{
+    opacity: 1;
+    width: 100%;
+    transition: 0.5s ease;
+}
+.gallery{
+    width: 40px;
+    height: 40px;
+}
+.gallery img{
+width: 100%;
+}
+.middle3 h3{
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.middle3-ichki{
+    margin: 100px 0;
+}
+
+
+/* small2 */
+.small2{
+width: 100%;
+padding: 60px 40px;
+display: flex;
+position: relative;
+}
+.shapka{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(img/shapka.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.small2-matn{
+    width: 700px;
+    padding: 20px 0;
+    position: relative;
+    margin-left: 20px;
+}
+.small2-matn p{
+    line-height: 30px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(134, 132, 132);
+}
+.chiziq2{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+}
+.joshua{
+   position: absolute;
+   left: 70px;
+   bottom: 5px;
+}
+/* page8 */
+
+.page8{
+    width: 100%;
+    background-image: url(img/choqqi.png) ;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    
+}
+.page8-bg{
+    width:100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.page8-box{
+    width: 446px;
+    height: 200px;
+    margin-top: 50px;
+    display: inline-flex;
+   
+}
+.page8-rasm{
+    width: 30%;
+    height: 134px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.page8-matn{
+    width: 70%;
+    padding: 0 20px;
+    position: relative;
+}
+.m-b{
+    margin-bottom: 100px;
+}
+.p8-line{
+    top: 60px;
+    position: absolute;
+}
+ .r1{
+    background-image: url(img/achkari.png);
+}
+.r2{
+    background-image: url(img/kurtoy.png);
+}
+.r3{
+    background-image: url(img/fataparatchi_2.png);
+}
+.r4{
+    background-image: url(img/blatnoyla.png);
+}
+
+/* page9 */
+
+.page9-box{
+    position: relative;
+    width: 280px;
+    height: auto;
+    display: inline-block;
+    margin: 70px 15px;
+}
+.page9-box img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.page9-icon{
+    display: inline-flex;
+    margin-top: 10px;
+}
+.page9-icon p{
+    color: rgb(139, 136, 136);
+    
+}
+.page9-icon i{
+    color: rgb(149,225,211);
+}
+.kok-box{
+    width: 45px;
+    height: 55px;
+    background-color: rgb(149,225,211);
+    color: #fff;
+    position: absolute;
+    left: -10px;
+    top: 100px;
+    text-align: center;
+    padding: 10px 5px;
+}
+.kok-box:hover{
+    background-color: rgb(80, 80, 133);
+}
+
+/* lakatsiya */
+.lakatsiya{
+    width: 100%;
+    height: 240px;
+    position: relative;
+    background-image: url(img/xarita.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.opacity-l{
+width: 100%;
+height: 100%;
+opacity: 0.8;
+background-color: white;
+position: absolute;
+left: 0;
+top: 0;
+z-index: -1;
+}
+.lak-img{
+    width: 50px;
+    height: 50px;
+   
+}
+.loc-line{
+    position: absolute;
+    left: 48%;
+    top: 180px;
+}
+/* footer */
+.footer{
+    width: 100%;
+}
+.box1{
+    width: 350px;
+    height: 300px;
+  
+}
+.box2{
+    width: 273px;
+    height: 300px;
+    padding-left: 20px;
+    
+}
+.box3{
+    width: 273px;
+    height: 300px;
+}
+.footer-tashqi{
+    margin: 70px 0;
+    display: inline-flex;
+}
+.box1-icon{
+    display: inline-flex;
+    margin-top: 10px;
+}
+.box1-icon i{
+    padding: 0 10px;
+    color: rgb(149,225,211);
+}
+.box1 input{
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.sub{
+    color: #fff;
+    background-color: rgb(149,225,211);
+    border: none;
+    border-radius: 5px;
+}
+.sub:hover{
+    transform: scale(1.1, 1.1);
+}
+.box2-ichki{
+display: inline-flex;
+margin-top: 15px;
+}
+.box2-img{
+    width: 90px;
+    height: 60px;
+}
+.box2-matn{
+width: 170px;
+font-size: 10px;
+padding: 15px;
+}
+.box2-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box3-ichki{
+    display: inline-block;
+    width: 85px;
+    height: 75px;
+}
+.box3-ichki img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
